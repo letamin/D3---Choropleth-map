@@ -18,7 +18,6 @@ body {
 }
 
 .countries {
-  fill: rgb(45, 212, 109);
   stroke: black;
   stroke-width: 0.1px;
 }
@@ -38,4 +37,9 @@ body {
   padding: 0.5rem;
   font-size: 1em;
   visibility: hidden;
+}
+
+.legend circle {
+  stroke: black;
+  stroke-opacity: 0.5;
 }
