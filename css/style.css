@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background: #333;
+}
+
+.sphere {
+  fill: rgb(42 137 186);
+}
+
+.countries {
+  fill: rgb(45, 212, 109);
+  stroke: black;
+  stroke-width: 0.1px;
+}
+
+.countries:hover {
+  opacity: 0.5;
+}
+
+.tooltip {
+  position: absolute;
+  text-align: center;
+  background: #fff;
+  color: #4e4e4e;
+  border: 1px solid #5c5c5c;
+  pointer-events: none;
+  border-radius: 6px;
+  padding: 0.5rem;
+  font-size: 1em;
+  visibility: hidden;
+}
