@@ -11,6 +11,7 @@ Promise.all([
 
 //Render function
 const render = (countries, pathGenerator, colorLegendGroup) => {
+    const colorScale = d3.scaleOrdinal();
     colorScale.domain(countries.features.map(colorValue).sort().reverse())
         .range(d3.schemeYlOrBr[colorScale.domain().length]);    //Create some colors for our map. More information: https://github.com/d3/d3-scale-chromatic/blob/master/README.md
 
@@ -32,7 +33,6 @@ const render = (countries, pathGenerator, colorLegendGroup) => {
         .on('mouseout', hoverDone)
 }
 
-const colorScale = d3.scaleOrdinal();
 const colorValue = d => d.properties.income_grp; //get the color based on the coutry's income group
 
 //Initialize the data for our map
